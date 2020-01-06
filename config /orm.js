@@ -1,4 +1,7 @@
+// Required Items 
 var connection = require("./connection");
+
+
 
 
 function objToSql(ob) {
@@ -18,6 +21,21 @@ function objToSql(ob) {
 
   return arr.toString();
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 var orm = {
   all: function(tableInput, cb) {

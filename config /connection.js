@@ -1,4 +1,4 @@
-// Set up MySQL connection.
+// Required Items 
 var mysql = require("mysql");
 
 var connection = mysql.createConnection({
@@ -9,10 +9,10 @@ var connection = mysql.createConnection({
   database: "burger_db"
 });
 
-// Make connection.
-connection.connect(function(err) {
-  if (err) {
-    console.error("error connecting: " + err.stack);
+// Make the connection.
+connection.connect(function(error) {
+  if (error) {
+    console.error("error connecting: " + error.stack);
     return;
   }
   console.log("connected as id " + connection.threadId);

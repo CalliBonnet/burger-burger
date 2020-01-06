@@ -1,5 +1,5 @@
-
-var orm = require("../config/orm.js");
+// Requried Items 
+var orm = require("../config /orm");
 
 var Burger = {
   all: function(cb) {
