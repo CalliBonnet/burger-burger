@@ -1,10 +1,18 @@
-
-{{!-- The Burgr header and burger information  --}}
+{{!-- Burger Header  --}}
 <div class="container">
   <div class="row">
-    <div class="col-12 text-center">
-      <h1>Burrgggeeerrr</h1>
+    <div class="col-12">
+      <div class="jumbotron jumbotron-fluid text-center">
+        <h1 class="display-4">All the Burgers! </h1>
+        <p class="lead">Add a burger to devour it!</p>
+      </div>
     </div>
+  </div>
+</div>
+
+{{!-- Burger Information --}}
+<div class="container">
+  <div class="row">
     <div class="col-6 text-center">
       <div class="row">
         {{!-- {{#each burger_data}} --}}
@@ -35,14 +43,23 @@
 </div>
 
 {{!-- New Burger Form  --}}
+<br>
 <div class="container">
   <div class="row">
-    <div class="col-12 text-center">
-      <form action="/burgers/create" method="POST">
-      <input type="text" class="form-control" name="burger_name" value="">
-      <button type="submit" class="btn btn-primary">Add!</button>
-      </form>
-      <p>Add the burger that you would like to Devour!</p>
+    <div class="col-12">
+
+      <div class="card">
+        <h5 class="card-header">Add more Burgers!</h5>
+        <div class="card-body">
+          <p class="card-text">Add the burger that you would like to Devour!</p>
+          <br>
+          <form action="/burgers/create" method="POST">
+            <input type="text" class="form-control" name="burger_name" value="">
+            <br>
+            <button type="submit" class="btn btn-primary">Add!</button>
+          </form>
+        </div>
+      </div>
     </div>
   </div>
 </div>
